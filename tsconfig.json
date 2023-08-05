@@ -1,0 +1,59 @@
+{
+  "extends": "@tsconfig/svelte/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "outDir": "./dist",
+
+    // "module": "es6",
+    "module": "esnext",
+    // "module": "CommonJS",
+    // "moduleResolution": "node",
+		// "isolatedModules": true,
+		// "esModuleInterop": true,
+    "target": "ESNext",
+    // "target": "ES2017",
+    
+
+    
+    
+    "strictNullChecks": false, // OMG
+
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": false,
+    "removeComments": true,
+    "skipLibCheck": true,
+    "strict": true,
+
+    // "preserveValueImports": true,
+    // "verbatimModuleSyntax": true,
+    "allowJs": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noUnusedLocals": false,
+    "traceResolution": true,
+    "allowSyntheticDefaultImports": true,
+
+    // "typeRoots": [ "./node_modules/@webgpu/types", "./node_modules/@types"],
+    // "typeRoots": ["./node_modules/@types", "./src/@types"],
+		"types": [
+      "./node_modules/@webgpu/types",
+			"svelte",
+			"svelte/store",
+			"svelte/motion",
+			"svelte/transition",
+			"svelte/animate",
+			"svelte/easing",
+      "node",
+      "webpack",
+      "webpack-dev-server",
+      "./src/types.d.ts"
+		],
+    // "ts-node": {
+    //   "compilerOptions": {
+    //     "module": "commonjs"
+    //   }
+    // }
+  },
+  "include": ["./vendor/*", "./typings/*", "./assets/*", "./src/**/*", "./src/*", "**/*.ts"]
+}

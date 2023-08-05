@@ -1,0 +1,13 @@
+node_modules/
+dist-zipped/
+yarn.lock
+.DS_Store
+package-lock.json
+pnpm-lock.yaml
+.VSCodeCounter/
+stats.json
+report.json
+start.bat
+getToken.ts
+dist/
+.lh/
